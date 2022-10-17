@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "Trade Gothic LT Extended";
+    src: 
+    url("fonts/Trade Gothic LT Extended.woff2") format("woff2"),
+    url("fonts/Trade Gothic LT Extended.woff") format("woff"),
+    url("fonts/Trade Gothic LT Extended.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "OggLight";
+    src: 
+    url("fonts/OggLight.woff2") format("woff2"),
+    url("fonts/OggLight.woff") format("woff"),
+    url("fonts/OggLight.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "OggLightItalic";
+    src: 
+    url("fonts/OggLightItalic.woff2") format("woff2"),
+    url("fonts/OggLightItalic.woff") format("woff"),
+    url("") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "OggMedium";
+    src: 
+    url("fonts/OggMedium.woff2") format("woff2"),
+    url("fonts/OggMedium.woff") format("woff"),
+    url("fonts/OggMedium.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "OggMediumItalict";
+    src: 
+    url("fonts/OggMediumItalic.woff2") format("woff2"),
+    url("fonts/OggMediumItalic.woff") format("woff"),
+    url("fonts/OggMediumItalic.otf") format("opentype");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "OggRegular";
+    src: 
+    url("fonts/OggRegular.woff2") format("woff2"),
+    url("fonts/OggRegular.woff") format("woff"),
+    url("fonts/OggRegular.otf") format("opentype");
+    font-display: fallback;
+}
+
+body {
+    font-family: 'Trade Gothic LT Extended';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'OggLight';
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+}
+
+.philosophy h2 {
+    margin-left: 10%;
+    margin-bottom: 7%;
+}
+
+.highlight {
+    color: #71870E;
+}
+
+.font__medium-italic {
+    font-family: 'OggMediumItalict';
+}
+
+.philosophy .flex-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.content {
+    padding: 7% 0;
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.theme {
+    position: absolute;
+    font-size: 14px;
+    left: 12%;
+    top: 16%;
+}
+
+.descr {
+    margin-top: 100px;
+    margin-left: 25%;
+    margin-bottom: 72px;
+}
+
+.read-more {
+    padding-left: 2%;
+}
+
+.read-more__line {
+    vertical-align: middle;
+    padding-right: 35px;
+}
+
+.read-more__button {
+    font-family: 'Trade Gothic LT Extended';
+    color: #71870E;
+}
+
+aside {
+    position: relative;
+}
+
+.philosophy__picture-small {
+    position: absolute;
+    top: 25%;
+    right: -25%;
+    z-index: 2;
+}
+
+.end-title {
+    padding: 75px 0px;
+    text-align: center;
+    font-family: 'Trade Gothic LT Extended';
+    color: #71870E;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        padding: 0px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    
+    .philosophy h2 {
+        text-align: center;
+        margin: 0;
+    }
+    
+    .philosophy .flex-wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .theme {
+        display: none;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .descr {
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .philosophy__picture-small {
+        top: 55%;
+        right: 0%;
+    }
+
+    .end-title {
+        display: none;
+    }
+
+    .read-more {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+
+
+}
